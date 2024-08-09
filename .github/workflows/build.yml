@@ -16,6 +16,7 @@ jobs:
           node-version: 18
       - name: Install Dependencies
         run: yarn install
+        working-directory: ./webapp
       - name: Linting
         run: yarn lint
         working-directory: ./webapp
