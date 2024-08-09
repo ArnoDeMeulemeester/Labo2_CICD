@@ -10,3 +10,11 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: Install NodeJS on build server
+        uses: actions/setup-node@v4
+          with:
+            node-version: 18
+      - name: Install Dependencies
+        run: yarn install
+      - name: Linting
+        run: yarn lint
