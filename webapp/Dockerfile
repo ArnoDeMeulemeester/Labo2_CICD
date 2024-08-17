@@ -7,7 +7,7 @@ EXPOSE 3000
 #Copy the application code in the /app folder in the container
 WORKDIR /app
 COPY . /app
-COPY package.json yarn.lock /app/
+COPY /webapp/package.json /webapp/yarn.lock /app/
 
 #Install the application dependencies with the yarn install --frozen-lockfile command
 RUN yarn install --frozen-lockfile
