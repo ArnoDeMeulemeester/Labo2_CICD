@@ -25,5 +25,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
+          file: ../webapp/Dockerfile
           push: false
           tags: arnodm1/webapp:latest
