@@ -26,5 +26,5 @@ jobs:
         with:
           context: .
           file: ./webapp/Dockerfile
-          push: false
+          push: true
           tags: arnodm1/webapp:latest
