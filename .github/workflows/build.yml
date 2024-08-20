@@ -11,7 +11,7 @@ jobs:
       run:
         working-directory: ./webapp
     steps:
-      - name: Check out repository code
+      - name: Check out repository code DEMO
         uses: actions/checkout@v3
       - name: Install NodeJS on build server
         uses: actions/setup-node@v4
